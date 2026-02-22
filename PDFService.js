@@ -352,7 +352,7 @@ export const generateReceipt = async (data) => {
         doc.text("(......................................................)", 130, signRow1 + 7, { align: "center" });
 
         const signRow2 = signRow1 + 25;
-        doc.text("ลงชื่อ......................................................ผู้จ่ายเงิน", 130, signRow2, { align: "center" });
+        doc.text("ลงชื่อ......................................................พยาน", 130, signRow2, { align: "center" });
         doc.text("(......................................................)", 130, signRow2 + 7, { align: "center" });
 
         doc.save(`Receipt_${data.id}.pdf`);
@@ -567,3 +567,4 @@ export default {
     generateLedger,
     generateSalarySlipPDF
 };
+
